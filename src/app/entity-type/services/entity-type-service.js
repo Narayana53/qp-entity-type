@@ -7,8 +7,7 @@ const entityTypeCreate = async (fastify, { request }) => {
 
 
 const entityTypeList = async (fastify, { request }) => {
-  const { email, password } = request.body;
-  return { email, password };
+  return { email: 1, password: 2 };
 };
 
 module.exports = { entityTypeCreate, entityTypeList};
